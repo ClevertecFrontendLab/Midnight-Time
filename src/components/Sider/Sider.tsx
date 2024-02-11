@@ -161,7 +161,7 @@ const SiderBar: React.FC<SidebarProps> = ({ width }) => {
             id='sider'
             width={`${width > 360 ? '208' : '106'}`}
             collapsed={!sideBarIsOpen}
-            collapsedWidth={`${width > 360 ? '64' : '0'}`}
+            collapsedWidth={`${width > 700 ? '64' : '0'}`}
         >
             <div className={classes.container}>
                 <div>

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
-    padding-top: 156px;
 }
 .footerText {
     color: var(--color-primary-light-6);
@@ -37,4 +36,21 @@
 .footerDownload {
     display: flex;
     gap: 8px;
+}
+
+@media screen and (max-width: 360px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerCard {
+        width: 100%;
+    }
+    .footerCardInner {
+        align-items: center;
+    }
+    .footerDownloadContainer {
+        justify-content: space-evenly;
+    }
 }

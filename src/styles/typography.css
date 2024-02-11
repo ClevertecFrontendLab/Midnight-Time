@@ -15,6 +15,7 @@
 .ant-card#footerCard > .ant-card-body {
     padding: 12px 0;
 }
+
 .ant-card > .ant-card-body {
     color: var(--color-title-85);
     line-height: 1.3;
@@ -32,8 +33,14 @@
     font-weight: 500;
     margin-bottom: 0;
 }
+.ant-layout-footer#footer {
+    padding: 156px 24px 42px;
+}
+div.ant-card.ant-card-bordered.optionsCard {
+    width: 240px;
+}
 
-@media screen and (min-width: 834px) {
+@media screen and (max-width: 834px) {
     .heroLineBreak {
         display: none;
     }
@@ -56,6 +63,14 @@
         position: fixed;
         height: 100vh;
         z-index: 999;
+    }
+    div.ant-card.ant-card-bordered.optionsCard {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .ant-layout-footer#footer {
+        padding: 0 16px 24px;
     }
 }
 

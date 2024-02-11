@@ -12,8 +12,8 @@ const FooterEl = () => {
         <Footer
             style={{
                 backgroundColor: 'transparent',
-                padding: '0 24px 42px',
             }}
+            id='footer'
             className={classes.footer}
         >
             <p className={classes.footerText}>Смотреть отзывы</p>

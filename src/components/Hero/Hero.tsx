@@ -51,7 +51,7 @@ const Hero = () => {
                             <p>Тренировки</p>
                         </div>
                     </Card>
-                    <Card>
+                    <Card className='optionsCard'>
                         <span className={classes.cardTitle}>Назначить календарь</span>
                         <Divider style={{ margin: '12px 0' }} />
                         <div className={classes.cardIconContainer} id='calendarIconHero'>
@@ -59,7 +59,7 @@ const Hero = () => {
                             <p>Календарь</p>
                         </div>
                     </Card>
-                    <Card>
+                    <Card className='optionsCard'>
                         <span className={classes.cardTitle}>Заполнить профиль</span>
                         <Divider style={{ margin: '12px 0' }} />
                         <div className={classes.cardIconContainer}>

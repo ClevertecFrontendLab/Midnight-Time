@@ -1,7 +1,7 @@
 .btnSliderDesctop {
     background: #fff;
     position: absolute;
-    top: 50%;
+    top: 50vh;
     left: 100%;
     transform: translateY(-50%);
     width: 20px;
