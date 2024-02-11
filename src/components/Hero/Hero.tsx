@@ -47,24 +47,30 @@ const Hero = () => {
                         <span className={classes.cardTitle}>Расписать тренировки</span>
                         <Divider style={{ margin: '12px 0' }} />
                         <div className={classes.cardIconContainer}>
-                            <HeartFilled />
-                            <p>Тренировки</p>
+                            <button className={classes.cardIcon}>
+                                <HeartFilled />
+                                <p>Тренировки</p>
+                            </button>
                         </div>
                     </Card>
                     <Card className='optionsCard'>
                         <span className={classes.cardTitle}>Назначить календарь</span>
                         <Divider style={{ margin: '12px 0' }} />
-                        <div className={classes.cardIconContainer} id='calendarIconHero'>
-                            <CalendarTwoTone />
-                            <p>Календарь</p>
+                        <div className={classes.cardIconContainer}>
+                            <button className={classes.cardIcon}>
+                                <CalendarTwoTone />
+                                <p>Календарь</p>
+                            </button>
                         </div>
                     </Card>
                     <Card className='optionsCard'>
                         <span className={classes.cardTitle}>Заполнить профиль</span>
                         <Divider style={{ margin: '12px 0' }} />
                         <div className={classes.cardIconContainer}>
-                            <IdcardOutlined />
-                            <p>Профиль</p>
+                            <button className={classes.cardIcon}>
+                                <IdcardOutlined />
+                                <p>Профиль</p>
+                            </button>
                         </div>
                     </Card>
                 </div>

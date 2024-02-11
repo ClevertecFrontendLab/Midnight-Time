@@ -16,7 +16,7 @@ const FooterEl = () => {
             id='footer'
             className={classes.footer}
         >
-            <p className={classes.footerText}>Смотреть отзывы</p>
+            <button className={classes.footerText}>Смотреть отзывы</button>
             <Card className={classes.footerCard} id='footerCard'>
                 <div className={classes.footerCardInner}>
                     <p>Скачать на телефон</p>

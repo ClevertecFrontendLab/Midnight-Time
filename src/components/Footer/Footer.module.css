@@ -8,6 +8,12 @@
     padding: 9.5px 15px;
     margin-bottom: 0;
     font-size: 16px;
+    transition: all 0.3s;
+    justify-self: start;
+}
+.footerText:hover {
+    color: var(--color-primary-light-5);
+    transform: translateY(3px);
 }
 .footerCardInner {
     display: flex;

@@ -18,6 +18,7 @@
 
     --color-title-85: #262626;
     --color-primary-light-1: #f0f5ff;
+    --color-primary-light-5: #40a9ff;
     --color-primary-light-6: #2f54eb;
     --color-primary-light-9: #061178;
     --color-secondary-45: #8c8c8c;
@@ -27,4 +28,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }

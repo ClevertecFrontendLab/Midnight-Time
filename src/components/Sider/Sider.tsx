@@ -207,7 +207,7 @@ const SiderBar: React.FC<SidebarProps> = ({ width }) => {
                     {width > 700 && <ExitIcon width={16} height={16} />}
                     {sideBarIsOpen && (
                         <div>
-                            <p>Выход</p>
+                            <button>Выход</button>
                         </div>
                     )}
                 </div>

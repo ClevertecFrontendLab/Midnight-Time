@@ -10,13 +10,32 @@
     height: 45px;
 }
 .cardIconContainer {
-    display: flex;
     color: var(--color-primary-light-6);
-    gap: 8px;
     font-size: 14px;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    transition: all 0.1s;
 }
+.cardIconContainer:hover {
+    color: var(--color-primary-light-5);
+}
+
+.cardIconContainer:hover svg path {
+    fill: var(--color-primary-light-5);
+}
+
+.cardIcon {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardIcon svg path {
+    fill: var(--color-primary-light-6);
+}
+
 .cardIconContainer p {
     padding: 7px 0;
 }

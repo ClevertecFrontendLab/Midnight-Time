@@ -1,14 +1,39 @@
 .settingContainer {
     min-width: fit-content;
+    width: 129px;
     height: 32px;
     display: flex;
     gap: 10px;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    transition: background-color 0.1s;
 }
-@media screen and (max-width: 834px) {
+.settingContainer:hover {
+    background-color: #fff;
+}
+.settingContainer p {
+    margin-bottom: 0;
+}
+.settingContainer svg[data-icon='setting'] {
+    color: var(--color-title-85);
+}
+
+@media screen and (max-width: 700px) {
     .settingContainer {
-        margin-left: 10px;
+        width: 32px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.3);
+        transition: border 0.1s;
     }
+    .settingContainer:hover {
+        border: 1px solid var(--color-primary-light-5);
+    }
+    .settingContainer:hover svg[data-icon='setting'] {
+        color: var(--color-primary-light-5);
+    }
+    /* svg[data-icon='setting']:hover {
+       
+    } */
 }

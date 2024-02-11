@@ -85,11 +85,11 @@
 }
 .menuExit div {
     width: 74px;
+    display: flex;
+    justify-content: center;
 }
-.menuExit p {
-    margin-bottom: 0;
+.menuExit button {
     font-size: 14px;
-    text-align: center;
 }
 .logoIconMobile {
     height: 18px;

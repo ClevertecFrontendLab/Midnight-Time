@@ -35,10 +35,10 @@ const HeaderEl: React.FC<HeaderProps> = ({ width }) => {
                     Приветствуем тебя в CleverFit — приложении,
                     <br /> которое поможет тебе добиться своей мечты!
                 </Title>
-                <div className={classes.settingContainer}>
-                    {(width >= 834 || width <= 700) && <SettingOutlined height={14} width={14} />}
-                    {width >= 700 && <Text>Настройки</Text>}
-                </div>
+                <button className={classes.settingContainer}>
+                    {(width >= 834 || width <= 700) && <SettingOutlined />}
+                    {width >= 700 && <p>Настройки</p>}
+                </button>
             </Layout>
         </Header>
     );
