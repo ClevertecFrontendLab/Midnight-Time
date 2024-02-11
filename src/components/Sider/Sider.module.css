@@ -1,0 +1,19 @@
+.sideBar {
+    position: relative;
+}
+.btnSliderDesctop {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 66px;
+    clip-path: polygon(0% 0%, 20px 8px, 20px 58px, 0 66px);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8c8c8c;
+}

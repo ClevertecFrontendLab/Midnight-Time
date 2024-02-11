@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 156px;
+}
+.footerText {
+    color: var(--color-primary-light-6);
+    padding: 9.5px 15px;
+    margin-bottom: 0;
+}
+.footerCard {
+    width: 240px;
+}
+.footerCardInner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 24px;
+}
+.footerCardInner p:first-child {
+    color: var(--color-primary-light-6);
+    font-size: 16px;
+}
+.footerCardInner p:nth-child(2) {
+    color: var(--color-secondary-45);
+    font-size: 14px;
+}
+.footerDownloadContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 16.5px;
+}
+.footerDownload {
+    display: flex;
+    gap: 8px;
+}

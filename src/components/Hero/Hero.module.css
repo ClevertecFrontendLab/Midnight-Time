@@ -1,0 +1,19 @@
+.heroInnerContainer {
+    max-width: 752px;
+    margin: 24px;
+}
+.cardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 45px;
+}
+.cardIconContainer {
+    display: flex;
+    color: var(--color-primary-light-6);
+    gap: 8px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
