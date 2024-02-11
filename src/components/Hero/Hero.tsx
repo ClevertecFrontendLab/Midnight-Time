@@ -60,7 +60,7 @@ const Hero = () => {
                     <Card style={{ flex: '0 1 240px' }}>
                         <span className={classes.cardTitle}>Назначить календарь</span>
                         <Divider style={{ margin: '12px 0' }} />
-                        <div className={classes.cardIconContainer}>
+                        <div className={classes.cardIconContainer} id='calendarIconHero'>
                             <CalendarTwoTone />
                             <p>Календарь</p>
                         </div>

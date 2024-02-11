@@ -35,6 +35,7 @@ h1.ant-typography {
     }
 }
 
-.calendarIcon svg path {
+/* TODO remove id */
+#calendarIconHero svg path {
     fill: var(--color-primary-light-6);
 }
