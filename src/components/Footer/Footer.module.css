@@ -1,6 +1,6 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 240px;
     align-items: end;
 }
 .footerText {
@@ -8,9 +8,6 @@
     padding: 9.5px 15px;
     margin-bottom: 0;
     font-size: 16px;
-}
-.footerCard {
-    width: 240px;
 }
 .footerCardInner {
     display: flex;
@@ -36,6 +33,25 @@
 .footerDownload {
     display: flex;
     gap: 8px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+    .footerCard {
+        grid-row: 1 / 2;
+    }
+    .footerCardInner {
+        align-items: center;
+    }
+    .footerDownloadContainer {
+        justify-content: space-evenly;
+    }
+    .footerText {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 360px) {
