@@ -7,8 +7,6 @@
     width: 20px;
     height: 66px;
     clip-path: polygon(0% 0%, 20px 8px, 20px 58px, 0 66px);
-    border: none;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,8 +21,6 @@
     width: 32px;
     height: 48px;
     clip-path: polygon(0% 0%, 32px 5.82px, 32px 42.18px, 0 100%);
-    border: none;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +33,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    box-shadow: 0 0.5px 8px rgba(0, 0, 0, 0.2);
 }
 .logoIconFull svg {
     height: 64px;

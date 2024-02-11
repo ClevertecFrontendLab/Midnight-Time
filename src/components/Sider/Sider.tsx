@@ -172,6 +172,7 @@ const SiderBar: React.FC<SidebarProps> = ({ width }) => {
                     {sideBarIsOpen && width <= 360 && (
                         <LogoIconMobile className={classes.logoIconMobile} />
                     )}
+
                     <div className={classes.menuContainer}>
                         <div
                             className={classes.menuItem}
