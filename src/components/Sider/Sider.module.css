@@ -30,6 +30,13 @@
     margin-bottom: 50px;
     padding: 14px 46px 17px 29px;
 }
+.logoIconSmall svg {
+    height: 64px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 19px 17.45px 18px 18px;
+}
 .menuContainer {
     display: flex;
     flex-direction: column;
