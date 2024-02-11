@@ -6,13 +6,18 @@ import { SettingOutlined } from '@ant-design/icons';
 const { Header } = Layout;
 const { Title, Text } = Typography;
 
-const HeaderEl = () => {
+interface HeaderProps {
+    width: number;
+}
+
+const HeaderEl: React.FC<HeaderProps> = ({ width }) => {
+    console.log(width);
     return (
         <Header
             className={classes.header}
             style={{
-                minHeight: '168px',
-                height: 'min-content',
+                minHeight: 'fit-content',
+                height: 'fit-content',
                 padding: '16px 24px',
             }}
         >
@@ -21,28 +26,19 @@ const HeaderEl = () => {
                 style={{
                     display: 'flex',
                     flexDirection: 'row',
+                    justifyContent: 'space-between',
                     margin: '8px 0 0',
                     backgroundColor: 'var(--color-primary-light-1)',
                 }}
             >
-                <Title level={1} style={{ lineHeight: '1.3' }}>
+                <Title level={1}>
                     Приветствуем тебя в CleverFit — приложении,
                     <br /> которое поможет тебе добиться своей мечты!
                 </Title>
-                <Layout
-                    style={{
-                        minWidth: '126px',
-                        height: '32px',
-                        display: 'flex',
-                        gap: '10px',
-                        flexDirection: 'row',
-                        justifyContent: 'flex-end',
-                        alignItems: 'center',
-                    }}
-                >
-                    <SettingOutlined height={14} width={14} />
-                    <Text>Настройки</Text>
-                </Layout>
+                <div className={classes.settingContainer}>
+                    {(width >= 834 || width <= 700) && <SettingOutlined height={14} width={14} />}
+                    {width >= 700 && <Text>Настройки</Text>}
+                </div>
             </Layout>
         </Header>
     );

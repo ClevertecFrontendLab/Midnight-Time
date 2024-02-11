@@ -34,22 +34,16 @@ const Hero = () => {
                         CleverFit — это не просто приложение, а твой личный помощник
                         <span className='heroLineBreak'>
                             <br />
-                        </span>
-                        в мире фитнеса. Не откладывай на завтра — начни тренироваться
+                        </span>{' '}
+                        в мире фитнеса. Не откладывай на завтра — начни тренироваться{' '}
                         <span className='heroLineBreak'>
                             <br />
-                        </span>
+                        </span>{' '}
                         уже сегодня!
                     </p>
                 </Card>
-                <div
-                    style={{
-                        display: 'flex',
-                        gap: '16px',
-                        marginTop: '24px',
-                    }}
-                >
-                    <Card style={{ flex: '0 1 240px' }}>
+                <div className={classes.optionsCardContainer}>
+                    <Card className='optionsCard'>
                         <span className={classes.cardTitle}>Расписать тренировки</span>
                         <Divider style={{ margin: '12px 0' }} />
                         <div className={classes.cardIconContainer}>
@@ -57,7 +51,7 @@ const Hero = () => {
                             <p>Тренировки</p>
                         </div>
                     </Card>
-                    <Card style={{ flex: '0 1 240px' }}>
+                    <Card>
                         <span className={classes.cardTitle}>Назначить календарь</span>
                         <Divider style={{ margin: '12px 0' }} />
                         <div className={classes.cardIconContainer} id='calendarIconHero'>
@@ -65,7 +59,7 @@ const Hero = () => {
                             <p>Календарь</p>
                         </div>
                     </Card>
-                    <Card style={{ flex: '0 1 240px' }}>
+                    <Card>
                         <span className={classes.cardTitle}>Заполнить профиль</span>
                         <Divider style={{ margin: '12px 0' }} />
                         <div className={classes.cardIconContainer}>

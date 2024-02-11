@@ -7,8 +7,24 @@ import HeaderEl from '@components/Header/Header';
 import Hero from '@components/Hero/Hero';
 import FooterEl from '@components/Footer/Footer';
 import SiderBar from '@components/Sider/Sider';
+import { useEffect, useState } from 'react';
 
 export const MainPage: React.FC = () => {
+    // TODO вынести в хуки
+    function useWindowWidth() {
+        const [width, setWidth] = useState(window.innerWidth);
+        function handleResize() {
+            setWidth(window.innerWidth);
+        }
+        useEffect(() => {
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+        return width;
+    }
+
+    const width = useWindowWidth();
+
     return (
         <div className={classes.center}>
             <Layout
@@ -20,9 +36,9 @@ export const MainPage: React.FC = () => {
                     backgroundPosition: 'center',
                 }}
             >
-                <SiderBar />
+                <SiderBar width={width} />
                 <Layout style={{ backgroundColor: 'transparent' }}>
-                    <HeaderEl />
+                    <HeaderEl width={width} />
                     <Hero />
                     <FooterEl />
                 </Layout>
