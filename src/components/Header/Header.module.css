@@ -17,10 +17,13 @@
 }
 .settingContainer svg[data-icon='setting'] {
     color: var(--color-title-85);
+    width: 14px;
+    height: 14px;
 }
 
 @media screen and (max-width: 700px) {
     .settingContainer {
+        min-width: 32px;
         width: 32px;
         border-radius: 50%;
         background-color: #fff;
