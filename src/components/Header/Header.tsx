@@ -36,7 +36,7 @@ const HeaderEl: React.FC<HeaderProps> = ({ width }) => {
                     <br /> которое поможет тебе добиться своей мечты!
                 </Title>
                 <button className={classes.settingContainer}>
-                    {(width >= 834 || width <= 700) && <SettingOutlined />}
+                    {(width > 834 || width <= 700) && <SettingOutlined />}
                     {width >= 700 && <p>Настройки</p>}
                 </button>
             </Layout>
