@@ -56,7 +56,7 @@
         justify-content: space-evenly;
     }
     .footerText {
-        text-align: center;
+        justify-self: center;
     }
 }
 
