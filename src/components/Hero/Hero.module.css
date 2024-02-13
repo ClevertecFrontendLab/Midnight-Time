@@ -1,0 +1,55 @@
+.heroInnerContainer {
+    max-width: 752px;
+    margin: 24px;
+}
+.cardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 45px;
+}
+.cardIconContainer {
+    color: var(--color-primary-light-6);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s;
+}
+.cardIconContainer:hover {
+    color: var(--color-primary-light-5);
+}
+
+.cardIconContainer:hover svg path {
+    fill: var(--color-primary-light-5);
+}
+
+.cardIcon {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardIcon svg path {
+    fill: var(--color-primary-light-6);
+}
+
+.cardIconContainer p {
+    padding: 7px 0;
+}
+.optionsCardContainer {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 700px) {
+    .optionsCardContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

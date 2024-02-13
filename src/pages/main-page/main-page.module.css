@@ -1,0 +1,11 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+.mainLayout {
+    max-width: 1440px;
+    width: 100%;
+}
+.innerContainer {
+    background-color: transparent;
+}

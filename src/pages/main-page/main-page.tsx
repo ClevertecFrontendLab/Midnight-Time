@@ -1,34 +1,48 @@
-import React, { useState } from 'react';
+import bgImage from '../../assets/Main_page_light.png';
+import classes from './main-page.module.css';
 
-import reactLogo from '/react.svg';
-import viteLogo from '/vite.svg';
-import tsLogo from '/ts.svg';
-import './main-page.css';
+import { Layout } from 'antd';
+
+import HeaderEl from '@components/Header/Header';
+import Hero from '@components/Hero/Hero';
+import FooterEl from '@components/Footer/Footer';
+import SiderBar from '@components/Sider/Sider';
+import { useEffect, useState } from 'react';
 
 export const MainPage: React.FC = () => {
-    const [count, setCount] = useState(0);
+    // TODO вынести в хуки
+    function useWindowWidth() {
+        const [width, setWidth] = useState(window.innerWidth);
+        function handleResize() {
+            setWidth(window.innerWidth);
+        }
+        useEffect(() => {
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+        return width;
+    }
+
+    const width = useWindowWidth();
 
     return (
-        <>
-            <div>
-                <a href='https://vitejs.dev' target='_blank'>
-                    <img src={viteLogo} className='logo' alt='Vite logo' />
-                </a>
-                <a href='https://react.dev' target='_blank'>
-                    <img src={reactLogo} className='logo react' alt='React logo' />
-                </a>
-                <a href='https://www.typescriptlang.org/' target='_blank'>
-                    <img src={tsLogo} className='logo' alt='TS logo' />
-                </a>
-            </div>
-            <h1>Vite + React + TS</h1>
-            <div className='card'>
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-                <p>
-                    Edit <code>src/pages/main-page.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
-        </>
+        <div className={classes.center}>
+            <Layout
+                className={classes.mainLayout}
+                style={{
+                    backgroundImage: `url(${bgImage})`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+            >
+                <SiderBar width={width} />
+                <Layout style={{ backgroundColor: 'transparent' }}>
+                    <HeaderEl width={width} />
+                    <Hero />
+                    <FooterEl />
+                </Layout>
+            </Layout>
+        </div>
     );
 };

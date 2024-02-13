@@ -1,0 +1,95 @@
+.btnSliderDesctop {
+    background: #fff;
+    position: absolute;
+    top: 50vh;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 66px;
+    clip-path: polygon(0% 0%, 20px 8px, 20px 58px, 0 66px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8c8c8c;
+    z-index: 999;
+}
+.btnSliderMobile {
+    background: #fff;
+    position: absolute;
+    top: 24px;
+    left: 100%;
+    width: 32px;
+    height: 48px;
+    clip-path: polygon(0% 0%, 32px 5.82px, 32px 42.18px, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8c8c8c;
+    z-index: 999;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0 0.5px 8px rgba(0, 0, 0, 0.2);
+}
+.logoIconFull svg {
+    height: 64px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 14px 46px 17px 29px;
+}
+.logoIconSmall svg {
+    height: 64px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 19px 17.45px 18px 18px;
+}
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+}
+.menuItem {
+    height: 42px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menuItem svg path {
+    fill: var(--color-primary-light-9);
+}
+.menuItem svg {
+    color: var(--color-primary-light-9);
+}
+.menuItem p {
+    color: var(--color-title-85);
+    margin-bottom: 0;
+}
+
+.menuExit {
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0 16px;
+}
+.menuExit div {
+    width: 74px;
+    display: flex;
+    justify-content: center;
+}
+.menuExit button {
+    font-size: 14px;
+}
+.logoIconMobile {
+    height: 18px;
+    width: 100%;
+    margin: 16px 17px;
+}
